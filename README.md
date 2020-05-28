@@ -44,8 +44,7 @@ npm install -D prettier eslint-config-prettier eslint-plugin-prettier
       {
         "trailingComma": "es5",
         "singleQuote": true,
-        "printWidth": 120,
-        "tabWidth": 8
+        "printWidth": 80
       }
     ]
   }
