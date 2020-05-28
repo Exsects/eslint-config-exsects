@@ -1,6 +1,8 @@
 # VSCode with ESLint, Prettier, and EditorConfig
 
-These are my settings for ESLint, Prettier, and EditorConfig
+_Adapted from Wes Bos's [No-Sweat™ Eslint and Prettier Setup - with or without VS Code](https://github.com/wesbos/eslint-config-wesbos)_
+
+These are my settings for ESLint, Prettier, and EditorConfig.
 
 ## What it does
 
@@ -15,10 +17,16 @@ These are my settings for ESLint, Prettier, and EditorConfig
 
 1. If you don't already have a `package.json` file, create one with `npm init`.
 
-2. Then we need to install everything needed by the config:
+2. Then we need to install the Airbnb config for ESLint:
 
 ```
 npx install-peerdeps --dev eslint-config-airbnb-base
+```
+
+3. We also have to install the Prettier config for ESLint as well:
+
+```
+npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
 3. You can see in your package.json there are now a big list of devDependencies.
@@ -67,9 +75,9 @@ trim_trailing_whitespace = false
 
 ## VSCode Configuration
 
-1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+1. Install both the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and the [EditorConfig for VScode extension](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
-2. Click on the gear icon at bottom left of VSCode and go to Settings.
+2. Go to VSCode's settings using the command `CTRL` + `,` (for Windows users) or `⌘` + `,` (for MacOS users).
 
 3. At the top right corner of VSCode click on the file icon as shown in the image below.
 
